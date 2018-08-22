@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FlightSearch">
+
+    <!--
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchPanel"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"/>
+-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/searchPanel"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_weight="1"
+        android:layout_marginEnd="6dp"
+        >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fromText"
+            android:text="From"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fromPlace"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:text="BOM"
+            android:textStyle="bold"
+            android:layout_below="@id/fromText"
+            android:layout_centerHorizontal="true"
+            />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sourceText"
+        android:text="Mumbai, India"
+        android:layout_below="@id/fromPlace"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/toText"
+                    android:text="To"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/toPlace"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:text="MAA"
+                    android:textStyle="bold"
+                    android:layout_below="@id/toText"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/destinationText"
+                    android:text="Chennai, India"
+                    android:layout_below="@id/toPlace"
+                    android:layout_centerHorizontal="true"
+                    />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/searchPanel1"
+        android:layout_below="@id/searchPanel"
+        android:orientation="horizontal">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="6dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/deptDate"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:text="Aug 29"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dayText"
+                android:text="Wednesday"
+                android:layout_below="@id/deptDate"
+                android:layout_centerHorizontal="true"
+                />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/passText"
+                    android:text="Passengers"
+                    android:layout_marginTop="25dp"
+                    android:layout_centerHorizontal="true"
+                    />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/passenger"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:text="3"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/passText"
+                />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchFlightBtn"
+        android:text="Search Flight"
+        android:layout_below="@id/searchPanel1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"/>
+
+</RelativeLayout>
