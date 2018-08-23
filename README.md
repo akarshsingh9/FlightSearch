@@ -64,6 +64,14 @@ number of passengers.
 3. Create an emulator if you haven’t already done so. The emulator needs to be on minimum API 21: Lollipop. 
    Any screen/phone size will do. Any higher API will also work. 
 4. Once your emulator is ready. Run the app. 
+5. In **from** enter value: **MAA**
+6. In **to** enter value: **BOM**
+7. Select Dept Date as: **28/8/2018**
+8. Select Passenger number: Anything from 1-9
+
+Note: Only limited cities are added to show that the logic and flow of the app works as intended. More values can be added to populate
+ the screen if needed.
+ 
 
 That's all
 ==============================================================================================================
