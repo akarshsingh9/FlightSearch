@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 public class BookActivity extends AppCompatActivity {
 
-    TextView airlineText,fromFinal,toFinal,deptFinal,arrFinal,fareText,passText,datedept;
+    TextView airlineText,fromFinal,toFinal,deptFinal,arrFinal,fareText,passText,datedept,totalfare,pass,fare1;
     ImageView imageView;
     Button book;
 
@@ -43,9 +43,17 @@ public class BookActivity extends AppCompatActivity {
         passText = (TextView)findViewById(R.id.passinfo);
         fareText = (TextView)findViewById(R.id.fareinfo);
         datedept = (TextView)findViewById(R.id.datedept);
+        fare1 = (TextView)findViewById(R.id.priceperhead);
+        pass = (TextView)findViewById(R.id.pass);
+        totalfare = (TextView)findViewById(R.id.fare);
 
         imageView = (ImageView)findViewById(R.id.airlineImage);
         book = (Button)findViewById(R.id.bookbtn);
+
+        int pph = Integer.parseInt(price);
+        int num = Integer.parseInt(passno);
+        int total = pph*num;
+        final String totalfare1 = ""+total;
 
         imageView.setImageResource(imageres);
         airlineText.setText(airline);
@@ -56,13 +64,16 @@ public class BookActivity extends AppCompatActivity {
         fareText.setText(price);
         passText.setText(passno);
         datedept.setText(deptdate);
+        fare1.setText(price);
+        pass.setText(passno);
+        totalfare.setText(totalfare1);
 
         book.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 BookDBAdapter adapter = new BookDBAdapter(BookActivity.this);
                 adapter.openDB();
-                adapter.insert(airline,deptTime,arrTime,fromCode,toCode,price);
+                adapter.insert(airline,deptTime,arrTime,fromCode,toCode,totalfare1);
                 Toast.makeText(BookActivity.this,"Flight Successfully Booked!",Toast.LENGTH_SHORT).show();
             }
         });

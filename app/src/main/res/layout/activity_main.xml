@@ -5,60 +5,65 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 <ImageView
-    android:layout_width="40dp"
-    android:layout_height="40dp"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
     android:layout_marginStart="12dp"
-    android:layout_marginTop="12dp"
+    android:layout_marginTop="20dp"
+    android:id="@+id/takeoff"
+    android:src="@drawable/flight_takeoff"
     />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/fromText"
-        android:text="From"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="12dp"/>
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/fromInput"
-        android:layout_below="@id/fromText"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/takeoff"
+        android:layout_marginEnd="20dp"
         android:layout_marginStart="12dp"
         android:hint="from where?"
         android:inputType="text"/>
 
+    <ImageView
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginTop="20dp"
+    android:id="@+id/land"
+        android:layout_below="@id/fromInput"
+    android:src="@drawable/flight_land"
+    />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/toText"
-        android:text="To"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="12dp"
-        android:layout_below="@id/fromInput"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/land"
+        android:layout_marginEnd="20dp"
         android:id="@+id/toInput"
-        android:layout_below="@id/toText"
+        android:layout_below="@id/fromInput"
         android:layout_marginStart="12dp"
         android:hint="to where?"
+        android:layout_marginTop="10dp"
         android:inputType="text"/>
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/deptDateText"
-        android:text="Departure Date"
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="12dp"
-        android:layout_below="@id/toInput"/>
+        android:layout_marginTop="20dp"
+        android:id="@+id/calender"
+        android:layout_below="@id/land"
+        android:src="@drawable/calender"
+        />
     <EditText
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:id="@+id/deptDateInput"
-        android:layout_below="@id/deptDateText"
+        android:layout_toEndOf="@id/calender"
+        android:layout_below="@id/toInput"
         android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
         android:hint="when are you leaving?"
         android:inputType="text"/>
 
@@ -66,36 +71,43 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/datepickerBtn"
+        android:layout_marginTop="15dp"
         android:layout_toEndOf="@id/deptDateInput"
-        android:layout_below="@id/deptDateText"
+        android:layout_below="@id/toInput"
         android:text="select"/>
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/passengerText"
-        android:text="Passengers"
-        android:layout_below="@id/deptDateInput"
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="12dp"/>
+        android:layout_marginTop="22dp"
+        android:id="@+id/people"
+        android:layout_below="@id/calender"
+        android:src="@drawable/people"
+        />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/passengerInput"
-        android:layout_below="@id/passengerText"
+        android:layout_toEndOf="@id/people"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/deptDateInput"
         android:layout_marginStart="12dp"
         android:hint="No. of Passengers?"
         android:inputType="text"/>
 
 
+
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="30dp"
         android:layout_height="wrap_content"
         android:id="@+id/searchFlightBtn"
         android:layout_below="@id/passengerInput"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="42dp"
         android:text="Search Flight"/>
 
 </RelativeLayout>
