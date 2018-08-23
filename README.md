@@ -44,8 +44,6 @@ Press "Book Flight" Button to store details in database and generate a Toast tha
 
 ![step5](https://user-images.githubusercontent.com/18751913/44508345-8e410d80-a6cb-11e8-8225-ad84122e23f4.PNG)
 
-![screenshot_1535003905](https://user-images.githubusercontent.com/18751913/44526205-e6463700-a700-11e8-8c9f-829463d7ed87.png)
-
 
 ## Flow
 
