@@ -3,6 +3,35 @@ package com.codeinpython.flightsearch;
 //POJO Class for SQLite Database
 public class Flight {
 
+    String flightName;
+    String deptDate;
+    String deptTime;
+    String arrTime;
+    String hrs;
+    String fromCode;
+    String fromCity;
+    String toCode;
+    String toCity;
+    String airport;
+    String price;
+
+    Flight(String flightName,String deptDate,String deptTime,String arrTime,String hrs,String fromCode,String toCode,String price)
+    {
+        this.flightName = flightName;
+        this.deptDate = deptDate;
+        this.deptTime = deptTime;
+        this.arrTime = arrTime;
+        this.hrs = hrs;
+        this.fromCode = fromCode;
+        //this.fromCity= fromCity;
+        this.toCode = toCode;
+        //this.toCity =toCity;
+        //this.airport = airport;
+        this.price = price;
+
+    }
+
+
     //Col
     //public static final String ROW_ID = "id";
     public static final String FLIGHT_ID = "id";
@@ -13,10 +42,10 @@ public class Flight {
     public static final String HOURS = "hours";
     public static final String DEPT_DATE = "deptdate";
     public static final String FROM_CODE = "fromcode";
-    public static final String FROM_CITY = "fromcity";
+    //public static final String FROM_CITY = "fromcity";
     public static final String TO_CODE = "tocode";
-    public static final String TO_CITY = "tocity";
-    public static final String AIRPORT = "airport";
+    //public static final String TO_CITY = "tocity";
+    //public static final String AIRPORT = "airport";
 
 
     //DB
@@ -33,11 +62,13 @@ public class Flight {
             +ARR_TIME+ " TEXT NOT NULL,"
             +HOURS+ " TEXT NOT NULL,"
             +FROM_CODE+" TEXT NOT NULL,"
-            +FROM_CITY+" TEXT NOT NULL,"
+      //      +FROM_CITY+" TEXT NOT NULL,"
+
             +TO_CODE+" TEXT NOT NULL,"
-            +TO_CITY+" TEXT NOT NULL,"
-            +PRICE+ " INTEGER,"
-            +AIRPORT+" TEXT NOT NULL);";
+            +PRICE+ " TEXT NOT NULL);";
+        //    +TO_CITY+" TEXT NOT NULL,"
+         //   +PRICE+ " INTEGER,"
+         //   +AIRPORT+" TEXT NOT NULL);";
     //DROP TB
     static final String DROP_TB="DROP TABLE IF EXISTS "+TB_NAME;
 

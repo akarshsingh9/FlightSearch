@@ -1,8 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/placeholder"
     tools:context=".MainActivity">
-</FrameLayout>
+<ImageView
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginTop="12dp"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fromText"
+        android:text="From"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fromInput"
+        android:layout_below="@id/fromText"
+        android:layout_marginStart="12dp"
+        android:hint="from where?"
+        android:inputType="text"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toText"
+        android:text="To"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/fromInput"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toInput"
+        android:layout_below="@id/toText"
+        android:layout_marginStart="12dp"
+        android:hint="to where?"
+        android:inputType="text"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deptDateText"
+        android:text="Departure Date"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/toInput"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/deptDateInput"
+        android:layout_below="@id/deptDateText"
+        android:layout_marginStart="12dp"
+        android:hint="when are you leaving?"
+        android:inputType="text"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/datepickerBtn"
+        android:layout_toEndOf="@id/deptDateInput"
+        android:layout_below="@id/deptDateText"
+        android:text="select"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/passengerText"
+        android:text="Passengers"
+        android:layout_below="@id/deptDateInput"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passengerInput"
+        android:layout_below="@id/passengerText"
+        android:layout_marginStart="12dp"
+        android:hint="No. of Passengers?"
+        android:inputType="text"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchFlightBtn"
+        android:layout_below="@id/passengerInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Search Flight"/>
+
+</RelativeLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".BookActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/dateText"
+        android:text="Date: "/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/dateText"
+        android:id="@+id/datedept"
+        android:text="Date: "/>
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/datedept"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    app:cardCornerRadius="12dp"
+    android:elevation="8dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:id="@+id/airlineImage"
+            android:src="@drawable/airindia"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Airline "
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/airlineImage"
+            android:id="@+id/airlineText"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:text="From: "
+            android:id="@+id/fromheading"
+            android:layout_toEndOf="@id/airlineImage"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/fromheading"
+            android:text="MAA"
+            android:id="@+id/frominfo"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:text="To: "
+            android:layout_toEndOf="@id/frominfo"
+            android:id="@+id/toheading"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/toheading"
+            android:text="BOM"
+            android:id="@+id/toinfo"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="40dp"
+            android:layout_below="@id/fromheading"
+            android:layout_toEndOf="@id/airlineImage"
+            android:text="Dept.: "
+            android:id="@+id/deptheading"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_below="@id/frominfo"
+            android:layout_toEndOf="@id/fromheading"
+            android:text="21:00"
+            android:id="@+id/deptinfo"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="12dp"
+            android:text="Arr.: "
+            android:layout_toEndOf="@id/deptinfo"
+            android:layout_below="@id/toheading"
+            android:id="@+id/arrheading"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/arrheading"
+            android:layout_below="@id/toinfo"
+            android:text="22:00"
+            android:id="@+id/arrinfo"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="40dp"
+            android:text="Pass: "
+            android:layout_below="@id/deptheading"
+            android:layout_toEndOf="@id/airlineImage"
+            android:id="@+id/passheading"
+            android:layout_marginBottom="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/passheading"
+            android:text="10"
+            android:layout_below="@id/deptinfo"
+            android:id="@+id/passinfo"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="36dp"
+            android:text="Fare: "
+            android:layout_toEndOf="@id/passinfo"
+            android:layout_below="@id/arrheading"
+            android:id="@+id/fareheading"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/fareheading"
+            android:layout_below="@id/arrinfo"
+            android:text="2200"
+            android:id="@+id/fareinfo"/>
+
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Flight"
+        android:id="@+id/bookbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"/>
+</RelativeLayout>
