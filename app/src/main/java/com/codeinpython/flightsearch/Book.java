@@ -20,6 +20,7 @@ public class Book {
 
     }
 
+    //getter methods
     public String getToCode() {
         return toCode;
     }
@@ -49,7 +50,6 @@ public class Book {
     public static final String PRICE = "price";
     public static final String DEPT_TIME="depttime";
     public static final String ARR_TIME="arrtime";
-    //public static final String DEPT_DATE = "deptdate";
     public static final String FROM_CODE = "fromcode";
     public static final String TO_CODE = "tocode";
 

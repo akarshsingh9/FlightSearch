@@ -6,6 +6,10 @@ import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 
 public class BookDBAdapter {
+    /*
+    *   BookDBAdapter to insert data into database after user clicks book btn
+    *   collects user booking details
+     */
     Context c;
     SQLiteDatabase db;
     BookDBHelper helper;
@@ -47,16 +51,11 @@ public class BookDBAdapter {
             ContentValues cv=new ContentValues();
 
             cv.put(Book.FLIGHT_NAME, flightName);
-            //cv.put(Book.DEPT_DATE, deptDate);
             cv.put(Book.DEPT_TIME, deptTime);
             cv.put(Book.ARR_TIME, arrTime);
-            //cv.put(Book.HOURS, hrs);
             cv.put(Book.FROM_CODE, fromcode);
-            //  cv.put(Book.FROM_CITY, from);
             cv.put(Book.TO_CODE, tocode);
-            //  cv.put(Book.TO_CITY, to);
             cv.put(Book.PRICE, price);
-            //  cv.put(Book.AIRPORT, airport);
 
 
             db.insert(Book.TB_NAME, Book.BOOK_ID, cv);

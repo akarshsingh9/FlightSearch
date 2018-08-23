@@ -2,6 +2,13 @@ package com.codeinpython.flightsearch;
 
 public class SearchedModelClass {
 
+    /*
+    *   SearchedModelClass - model class for searched items that will be placed in recyclerview
+    *   After searching SQLite database the result is passed in list via SearchedModelClass
+    *   getter defined
+    *   Constructor is important
+     */
+
     private int flightImage;
     private String fromCode;
     private String toCode;

@@ -6,6 +6,10 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class BookDBHelper extends SQLiteOpenHelper {
+/*
+*   BookDBHelper - used for Database created for user who has already booked a flight ticket
+*   Create table, onUpgrade to newer version
+ */
 
     public BookDBHelper(Context context)
     {

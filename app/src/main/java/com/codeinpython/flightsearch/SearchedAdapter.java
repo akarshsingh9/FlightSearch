@@ -12,17 +12,13 @@ import android.widget.TextView;
 import java.util.List;
 
 public class SearchedAdapter extends RecyclerView.Adapter<SearchedAdapter.ViewHolder> {
-
-
     List<SearchedModelClass> query;
-
 
     SearchedAdapter(List<SearchedModelClass> modelClassList)
     {
         this.query = modelClassList;
     }
-
-
+    //onCreateViewHolder will populate the searched_row.xml that we created as layout of each row in recylcerview
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -30,6 +26,7 @@ public class SearchedAdapter extends RecyclerView.Adapter<SearchedAdapter.ViewHo
         return new ViewHolder(v);
     }
 
+    //onBindViewHolder implemented
     @Override
     public void onBindViewHolder(@NonNull final ViewHolder holder, int position) {
         holder.flightName.setText(query.get(position).getFlightName());
@@ -41,6 +38,7 @@ public class SearchedAdapter extends RecyclerView.Adapter<SearchedAdapter.ViewHo
         holder.hrs.setText(query.get(position).getHrs());
         holder.price.setText(query.get(position).getPrice());
 
+        //on each item click in recyclerview intent to BookActivity is sent
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -69,6 +67,7 @@ public class SearchedAdapter extends RecyclerView.Adapter<SearchedAdapter.ViewHo
         super.onAttachedToRecyclerView(recyclerView);
     }
 
+    //ViewHolder Class defined
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         TextView flightName;

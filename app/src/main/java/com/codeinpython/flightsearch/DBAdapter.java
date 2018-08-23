@@ -55,11 +55,8 @@ public class DBAdapter {
             cv.put(Flight.ARR_TIME, arrTime);
             cv.put(Flight.HOURS, hrs);
             cv.put(Flight.FROM_CODE, fromcode);
-          //  cv.put(Flight.FROM_CITY, from);
             cv.put(Flight.TO_CODE, tocode);
-          //  cv.put(Flight.TO_CITY, to);
             cv.put(Flight.PRICE, price);
-          //  cv.put(Flight.AIRPORT, airport);
 
 
             db.insert(Flight.TB_NAME, Flight.FLIGHT_ID, cv);
@@ -76,26 +73,7 @@ public class DBAdapter {
     //RETRIEVE DATA AND FILTER
     public Cursor retrieve(String fromcode, String tocode, String deptDate)
     {
-        //String[] columns={Flight.FLIGHT_NAME,Flight.DEPT_TIME,Flight.ARR_TIME,Flight.HOURS,Flight.FROM_CODE,Flight.TO_CODE,Flight.PRICE};
-       /*
-        Cursor c=null;
-
-        if(fromcode != null && tocode!=null && deptDate!=null)
-        {
-            String sql="SELECT flightname,depttime,arrtime,hours,fromcode,tocode,price FROM "+Flight.TB_NAME+" WHERE "+Flight.FROM_CODE+" LIKE '%"+searchTerm+"%'";
-            c=db.rawQuery(sql,null);
-            return c;
-
-        }
-
-        c=db.query(Flight.TB_NAME,columns,null,null,null,null,null);
-        return c;
-        */
         String query = "SELECT * from "+Flight.TB_NAME+" WHERE "+Flight.FROM_CODE+"=? AND "+Flight.TO_CODE+"=? AND "+Flight.DEPT_DATE+"=?;";
-        //+fromcode
-              //  +" AND tocode="+tocode+") AND deptdate="+deptDate+";";
-        //where (column1 like ? and column2 like ?) and column3 like ?";
-        //String[] params = {"%" + fromcode + "%", "%" + tocode + "%", "%" + deptDate + "%"};
         Cursor c = db.rawQuery(query, new String[]{fromcode,tocode,deptDate});
         return c;
     }

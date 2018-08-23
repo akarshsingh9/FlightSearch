@@ -7,6 +7,11 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DBHelper extends SQLiteOpenHelper {
 
+    /*
+    *   DBHelper extends SQLiteOpenHelper
+    *   Used to create table or destroy using upgrade
+     */
+
     public DBHelper(Context context)
     {
         super(context, Flight.DB_NAME,null,Flight.DB_VERSION);

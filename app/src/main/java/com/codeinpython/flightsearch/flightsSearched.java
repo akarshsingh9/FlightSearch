@@ -10,33 +10,41 @@ import android.support.v7.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+*   Intent from MainActivity -> flightSearched Activity
+*   receives intent Extras from MainActivity
+*   passes from , to ,  date as parameter to retrieve method in DBAdapter to search the database for given condition
+*   Displays result in RecyclerView
+ */
+
 public class flightsSearched extends AppCompatActivity {
 
     List<SearchedModelClass> list;
     String passNo;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flights_searched);
 
+        //getIntent from MainActivity
         Intent intent = getIntent();
         String from = intent.getStringExtra("from");
         String to = intent.getStringExtra("to");
         String date = intent.getStringExtra("date");
         passNo = intent.getStringExtra("passNo");
 
+        //Initialize RecyclerView
         RecyclerView recyclerView = (RecyclerView)findViewById(R.id.searchedFlightRecycler);
         recyclerView.setHasFixedSize(true);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        //TextView log = (TextView)findViewById(R.id.log);
-
+        //retrieve search result
         DBAdapter adapter = new DBAdapter(this);
         adapter.openDB();
         Cursor c = adapter.retrieve(from,to,date);
          list = new ArrayList<>();
-        //StringBuffer buffer = new StringBuffer();
         String flight ="";
         String deptTime ="";
         String arrTime ="";
@@ -64,9 +72,11 @@ public class flightsSearched extends AppCompatActivity {
             fromcode = c.getString(6);
             tocode = c.getString(7);
             price = c.getString(8);
+            //add search result to list which will then be added to recyclerview adapter
             list.add(new SearchedModelClass(imageres,flight,fromcode,tocode,deptTime,arrTime,hrs,price));
         }
 
+        //set adapter
         SearchedAdapter adapter1 = new SearchedAdapter(list);
         recyclerView.setAdapter(adapter1);
 
