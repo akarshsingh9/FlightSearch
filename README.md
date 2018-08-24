@@ -76,6 +76,17 @@ number of passengers.
 
 Note: Only limited cities are added to show that the logic and flow of the app works as intended. More values can be added to populate
  the screen if needed.
+ 
+ Currently you can select from
+      * BOM - Mumbai
+      * MAA - Chennai
+      * DEL - Delhi
+      * BLR - Bangalore
+      * AHM - Ahmedabad
+      * CCU - Kolkata
+      * PAT - Patna
+ Departure Dates: 25/8/2018,26/8/2018,27/8/2018,28/8/2018,29/8/2018,30/8/2018
+  
 
 **Update: I have changed the UI and APK at 6:05 PM on 24/08/2018. I have updated the README accordingly.**
 
