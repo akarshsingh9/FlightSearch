@@ -25,7 +25,7 @@
 
 1. Search Panel - asking details regarding user journey
 
-![screenshot_1535114011](https://user-images.githubusercontent.com/18751913/44584973-52d83900-a7c8-11e8-9a37-6ec0816aba19.png)
+![screenshot_1535114011](https://user-images.githubusercontent.com/18751913/44584973-52d83900-a7c8-11e8-9a37-6ec0816aba19.png =300x500)
 
 2. Date Picker for selecting departure date
 
