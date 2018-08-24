@@ -10,6 +10,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#000"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:id="@+id/dateText"
@@ -18,6 +20,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#000"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_toEndOf="@id/dateText"
@@ -201,7 +205,9 @@
         android:text="@string/price_per_head"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="120dp"
+        android:textColor="#000"
         android:layout_below="@id/cardView"
+        android:textSize="17sp"
         android:layout_marginTop="60dp"/>
 
 
@@ -210,8 +216,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/priceperhead"
         android:text="@string/_2000"
+        android:textSize="17sp"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="60dp"
+        android:textColor="#000"
         android:layout_below="@id/cardView"
         android:layout_marginTop="60dp"/>
 
@@ -220,6 +228,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/passNo"
         android:text="@string/passengers"
+        android:textSize="17sp"
+        android:textColor="#000"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="120dp"
         android:layout_below="@id/priceperheadText"
@@ -230,6 +240,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/pass"
         android:text="@string/_2"
+        android:textColor="#000"
+        android:textSize="17sp"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="60dp"
         android:layout_below="@id/priceperhead"
@@ -239,6 +251,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/totalText"
+        android:textColor="#000"
+        android:textSize="17sp"
         android:text="@string/total_fare"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="120dp"
@@ -250,10 +264,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/fare"
+        android:textSize="17sp"
         android:text="@string/_4000"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="60dp"
         android:layout_below="@id/pass"
+        android:textColor="#000"
         android:layout_marginTop="10dp"/>
 
 
@@ -263,6 +279,7 @@
         android:layout_height="wrap_content"
         android:text="@string/book_flight"
         android:id="@+id/bookbtn"
+        android:theme="@style/AppTheme.Button"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="20dp"/>
