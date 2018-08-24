@@ -25,28 +25,28 @@
 
 1. Search Panel - asking details regarding user journey
 
-![screenshot_1535114011](https://user-images.githubusercontent.com/18751913/44584973-52d83900-a7c8-11e8-9a37-6ec0816aba19.png =300x500)
+![step1](https://user-images.githubusercontent.com/18751913/44585677-bb281a00-a7ca-11e8-98f7-de4cb81e1b05.PNG)
 
 2. Date Picker for selecting departure date
 
-![screenshot_1535114036](https://user-images.githubusercontent.com/18751913/44584999-6daaad80-a7c8-11e8-97a9-4a627139e454.png)
+![step2](https://user-images.githubusercontent.com/18751913/44585678-bcf1dd80-a7ca-11e8-9809-c3817035f9e6.PNG)
 
 3. User enter city codes in from and to which will be used to search in SQLite database as well. Press "Search Flight" Button.
 
-![screenshot_1535114047](https://user-images.githubusercontent.com/18751913/44585018-7d29f680-a7c8-11e8-9f16-09d39aa80d52.png)
+![step3](https://user-images.githubusercontent.com/18751913/44585680-bf543780-a7ca-11e8-8947-3fc1ac7a4db5.PNG)
 
 4. Search Result is generated in RecyclerView with flight Image, name, dept time, arrival time, hours, price
 
-![screenshot_1535114070](https://user-images.githubusercontent.com/18751913/44585044-90d55d00-a7c8-11e8-86aa-a63187d313ea.png)
+![step4](https://user-images.githubusercontent.com/18751913/44585681-c1b69180-a7ca-11e8-869d-d96413ff9251.PNG)
 
 5. When user selects any flight a new activity or screen open that has details regarding the flight and total fare is calculated. 
 Press "Book Flight" Button to store details in database and generate a Toast that booking was successful.
 
-![screenshot_1535114077](https://user-images.githubusercontent.com/18751913/44585061-a054a600-a7c8-11e8-92c4-a04e52a63420.png)
+![step5](https://user-images.githubusercontent.com/18751913/44585682-c3805500-a7ca-11e8-87f3-97c7a98fdb76.PNG)
 
 6. 
 
-![screenshot_1535114080](https://user-images.githubusercontent.com/18751913/44585080-b5313980-a7c8-11e8-8ea8-c0af9ed3c754.png)
+![step6](https://user-images.githubusercontent.com/18751913/44585683-c5e2af00-a7ca-11e8-98bc-40f234c30c57.PNG)
 
 
 ## Flow
