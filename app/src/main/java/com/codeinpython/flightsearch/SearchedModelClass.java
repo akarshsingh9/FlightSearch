@@ -1,6 +1,6 @@
 package com.codeinpython.flightsearch;
 
-public class SearchedModelClass {
+class SearchedModelClass {
 
     /*
     *   SearchedModelClass - model class for searched items that will be placed in recyclerview

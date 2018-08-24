@@ -1,6 +1,42 @@
 <resources>
     <string name="app_name">Flight Search</string>
+    <string name="date">Date: </string>
+    <string name="flightImage">Flight Image</string>
+    <string name="airline">Airline </string>
+    <string name="from">From: </string>
+    <string name="maa">MAA</string>
+    <string name="to">To:</string>
+    <string name="bom">BOM</string>
+    <string name="dept">Dept.:</string>
+    <string name="_21_00">21:00</string>
+    <string name="arr">Arr.:</string>
+    <string name="_22_00">22:00</string>
+    <string name="pass">Pass:</string>
+    <string name="_10">10</string>
+    <string name="fare">Fare:</string>
+    <string name="_2200">2200</string>
+    <string name="price_per_head">Price per Head:</string>
+    <string name="_2000">2000</string>
+    <string name="passengers">Passengers:</string>
+    <string name="_2">2</string>
+    <string name="total_fare">Total Fare:</string>
+    <string name="_4000">4000</string>
+    <string name="book_flight">Book Flight</string>
+    <string name="take_off_image">Take off image</string>
+    <string name="from_where">from where?</string>
+    <string name="landing_image">landing image</string>
+    <string name="to_where">to where?</string>
+    <string name="calender_image">calender image</string>
+    <string name="when_are_you_leaving">when are you leaving?</string>
+    <string name="face_image">face image</string>
+    <string name="no_of_passengers">No. of Passengers?</string>
+    <string name="search_flight">Search Flight</string>
+    <string name="select">select</string>
+    <string name="flight">Flight</string>
+    <string name="_20_00">20:00</string>
+    <string name="arrow">Arrow Image</string>
+    <string name="_21_001">21:00</string>
+    <string name="hrs">hrs</string>
+    <string name="dash">/-</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

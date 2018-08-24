@@ -1,7 +1,7 @@
 package com.codeinpython.flightsearch;
 
 //POJO for Booking database
-public class Book {
+class Book {
     private String flightName;
     private String departure;
     private String arrival;

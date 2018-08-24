@@ -24,8 +24,12 @@ import java.util.Calendar;
 public class MainActivity extends AppCompatActivity {
 
     //declare EditText and Button objects
-    EditText fromCity, toCity, passNo, deptDate;
-    Button datebtn, searchbtn;
+    private EditText fromCity;
+    private EditText toCity;
+    private EditText passNo;
+    private EditText deptDate;
+    private Button datebtn;
+    private Button searchbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,8 +59,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 final Calendar calendar = Calendar.getInstance();
                 int mYear = calendar.get(Calendar.YEAR);
-                int mMonth = calendar.get(calendar.MONTH);
-                int mDay = calendar.get(calendar.DAY_OF_MONTH);
+                int mMonth = calendar.get(Calendar.MONTH);
+                int mDay = calendar.get(Calendar.DAY_OF_MONTH);
 
                 DatePickerDialog datePickerDialog = new DatePickerDialog(MainActivity.this, new DatePickerDialog.OnDateSetListener() {
                     @Override
@@ -97,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
       * CCU - Kolkata
       * PAT - Patna
       */
-void databaseSetup()
+    private void databaseSetup()
         {
             DBHelper db = new DBHelper(this);
             DBAdapter adapter = new DBAdapter(this);

@@ -1,7 +1,8 @@
 package com.codeinpython.flightsearch;
 
 //POJO Class for SQLite Database
-public class Flight {
+@SuppressWarnings("FieldCanBeLocal")
+class Flight {
 
     private String flightName;
     private String deptDate;

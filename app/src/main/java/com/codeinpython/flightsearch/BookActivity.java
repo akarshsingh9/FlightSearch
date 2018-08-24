@@ -21,9 +21,19 @@ public class BookActivity extends AppCompatActivity {
     *   when user clicks book button a toast is displayed and data is pushed to database.
      */
 
-    TextView airlineText,fromFinal,toFinal,deptFinal,arrFinal,fareText,passText,datedept,totalfare,pass,fare1;
-    ImageView imageView;
-    Button book;
+    private TextView airlineText;
+    private TextView fromFinal;
+    private TextView toFinal;
+    private TextView deptFinal;
+    private TextView arrFinal;
+    private TextView fareText;
+    private TextView passText;
+    private TextView datedept;
+    private TextView totalfare;
+    private TextView pass;
+    private TextView fare1;
+    private ImageView imageView;
+    private Button book;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

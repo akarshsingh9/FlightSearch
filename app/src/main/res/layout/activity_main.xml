@@ -11,7 +11,7 @@
     android:layout_marginTop="20dp"
     android:id="@+id/takeoff"
     android:src="@drawable/flight_takeoff"
-    />
+    android:contentDescription="@string/take_off_image" />
 
     <EditText
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
         android:layout_toEndOf="@id/takeoff"
         android:layout_marginEnd="20dp"
         android:layout_marginStart="12dp"
-        android:hint="from where?"
+        android:hint="@string/from_where"
         android:inputType="text"/>
 
     <ImageView
@@ -32,7 +32,7 @@
     android:id="@+id/land"
         android:layout_below="@id/fromInput"
     android:src="@drawable/flight_land"
-    />
+        android:contentDescription="@string/landing_image" />
 
     <EditText
         android:layout_width="match_parent"
@@ -42,7 +42,7 @@
         android:id="@+id/toInput"
         android:layout_below="@id/fromInput"
         android:layout_marginStart="12dp"
-        android:hint="to where?"
+        android:hint="@string/to_where"
         android:layout_marginTop="10dp"
         android:inputType="text"/>
 
@@ -55,7 +55,7 @@
         android:id="@+id/calender"
         android:layout_below="@id/land"
         android:src="@drawable/calender"
-        />
+        android:contentDescription="@string/calender_image" />
     <EditText
         android:layout_width="200dp"
         android:layout_height="wrap_content"
@@ -64,8 +64,9 @@
         android:layout_below="@id/toInput"
         android:layout_marginStart="12dp"
         android:layout_marginTop="10dp"
-        android:hint="when are you leaving?"
-        android:inputType="text"/>
+        android:hint="@string/when_are_you_leaving"
+        android:inputType="text"
+        tools:ignore="TextFields" />
 
     <Button
         android:layout_width="wrap_content"
@@ -74,7 +75,7 @@
         android:layout_marginTop="15dp"
         android:layout_toEndOf="@id/deptDateInput"
         android:layout_below="@id/toInput"
-        android:text="select"/>
+        android:text="@string/select"/>
 
 
     <ImageView
@@ -85,7 +86,7 @@
         android:id="@+id/people"
         android:layout_below="@id/calender"
         android:src="@drawable/people"
-        />
+        android:contentDescription="@string/face_image" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -95,7 +96,7 @@
         android:layout_marginTop="10dp"
         android:layout_below="@id/deptDateInput"
         android:layout_marginStart="12dp"
-        android:hint="No. of Passengers?"
+        android:hint="@string/no_of_passengers"
         android:inputType="text"/>
 
 
@@ -108,6 +109,6 @@
         android:layout_below="@id/passengerInput"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="42dp"
-        android:text="Search Flight"/>
+        android:text="@string/search_flight"/>
 
 </RelativeLayout>

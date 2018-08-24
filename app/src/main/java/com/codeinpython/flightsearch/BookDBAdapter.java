@@ -5,14 +5,14 @@ import android.content.Context;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 
-public class BookDBAdapter {
+class BookDBAdapter {
     /*
     *   BookDBAdapter to insert data into database after user clicks book btn
     *   collects user booking details
      */
-    Context c;
-    SQLiteDatabase db;
-    BookDBHelper helper;
+    private Context c;
+    private SQLiteDatabase db;
+    private BookDBHelper helper;
 
     public BookDBAdapter(Context c) {
         this.c = c;

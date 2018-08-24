@@ -16,7 +16,8 @@
         android:src="@drawable/airindia"
         android:id="@+id/flightImage"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/flightImage" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -25,14 +26,14 @@
         android:layout_below="@id/flightImage"
         android:layout_marginTop="8dp"
         android:layout_marginStart="8dp"
-        android:text="Flight"
+        android:text="@string/flight"
         android:layout_marginBottom="8dp"/>
 
        <TextView
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:id="@+id/deptTime"
-           android:text="20:00"
+           android:text="@string/_20_00"
            android:layout_centerVertical="true"
            android:layout_toEndOf="@id/flightImage"
            android:layout_marginStart="50dp"
@@ -45,13 +46,14 @@
            android:id="@+id/arrow"
            android:layout_toEndOf="@id/deptTime"
            android:layout_centerVertical="true"
-           android:layout_marginStart="8dp"/>
+           android:layout_marginStart="8dp"
+           android:contentDescription="@string/arrow" />
        <TextView
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:id="@+id/arrTime"
            android:layout_centerVertical="true"
-       android:text="21:00"
+       android:text="@string/_21_00"
            android:layout_toEndOf="@id/arrow"
            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
            android:layout_marginStart="8dp"/>
@@ -63,7 +65,7 @@
            android:layout_marginTop="24dp"
            android:layout_marginStart="60dp"
            android:layout_toEndOf="@id/flightImage"
-        android:text="MAA"/>
+        android:text="@string/maa"/>
 
        <TextView
            android:layout_width="wrap_content"
@@ -74,7 +76,7 @@
            android:layout_marginStart="17dp"
            android:layout_alignBaseline="@id/frCode"
            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-           android:text="2"/>
+           android:text="@string/_2"/>
 
 
        <TextView
@@ -86,7 +88,7 @@
            android:layout_marginStart="2dp"
            android:layout_alignBaseline="@id/hrs"
            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-           android:text="hrs"/>
+           android:text="@string/hrs"/>
 
 
        <TextView
@@ -97,7 +99,7 @@
            android:layout_below="@id/arrTime"
            android:layout_marginStart="16dp"
         android:id="@+id/tCode"
-        android:text="BOM"/>
+        android:text="@string/bom"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -107,7 +109,7 @@
         android:layout_centerVertical="true"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
         android:layout_marginEnd="20dp"
-        android:text="2100"/>
+        android:text="@string/_21_001"/>
 
 
        <TextView
@@ -118,7 +120,7 @@
            android:layout_marginEnd="4dp"
            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
            android:layout_centerVertical="true"
-           android:text="/-"/>
+           android:text="@string/dash"/>
 
 
 

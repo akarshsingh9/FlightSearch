@@ -12,7 +12,7 @@ import android.widget.TextView;
 import java.util.List;
 
 public class SearchedAdapter extends RecyclerView.Adapter<SearchedAdapter.ViewHolder> {
-    List<SearchedModelClass> query;
+    private List<SearchedModelClass> query;
 
     SearchedAdapter(List<SearchedModelClass> modelClassList)
     {
@@ -62,11 +62,6 @@ public class SearchedAdapter extends RecyclerView.Adapter<SearchedAdapter.ViewHo
     }
 
 
-    @Override
-    public void onAttachedToRecyclerView(@NonNull RecyclerView recyclerView) {
-        super.onAttachedToRecyclerView(recyclerView);
-    }
-
     //ViewHolder Class defined
     public class ViewHolder extends RecyclerView.ViewHolder {
 
@@ -82,14 +77,14 @@ public class SearchedAdapter extends RecyclerView.Adapter<SearchedAdapter.ViewHo
         ViewHolder(View view)
         {
             super(view);
-            flightName = (TextView)view.findViewById(R.id.flight);
-            fromCode = (TextView)view.findViewById(R.id.frCode);
-            toCode = (TextView)view.findViewById(R.id.tCode);
-            deptTime =  (TextView)view.findViewById(R.id.deptTime);
-            arrTime =  (TextView)view.findViewById(R.id.arrTime);
-            hrs =  (TextView)view.findViewById(R.id.hrs);
-            price = (TextView)view.findViewById(R.id.price);
-            flightImageView = (ImageView)view.findViewById(R.id.flightImage);
+            flightName = view.findViewById(R.id.flight);
+            fromCode = view.findViewById(R.id.frCode);
+            toCode = view.findViewById(R.id.tCode);
+            deptTime = view.findViewById(R.id.deptTime);
+            arrTime = view.findViewById(R.id.arrTime);
+            hrs = view.findViewById(R.id.hrs);
+            price = view.findViewById(R.id.price);
+            flightImageView = view.findViewById(R.id.flightImage);
 
         }
 

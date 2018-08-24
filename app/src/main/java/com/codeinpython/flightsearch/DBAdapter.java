@@ -7,11 +7,11 @@ import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 
 //Perform CRUD operation with DBAdapter
-public class DBAdapter {
+class DBAdapter {
 
-    Context c;
-    SQLiteDatabase db;
-    DBHelper helper;
+    private Context c;
+    private SQLiteDatabase db;
+    private DBHelper helper;
 
     public DBAdapter(Context c) {
         this.c = c;
@@ -74,7 +74,6 @@ public class DBAdapter {
     public Cursor retrieve(String fromcode, String tocode, String deptDate)
     {
         String query = "SELECT * from "+Flight.TB_NAME+" WHERE "+Flight.FROM_CODE+"=? AND "+Flight.TO_CODE+"=? AND "+Flight.DEPT_DATE+"=?;";
-        Cursor c = db.rawQuery(query, new String[]{fromcode,tocode,deptDate});
-        return c;
+        return db.rawQuery(query, new String[]{fromcode,tocode,deptDate});
     }
 }

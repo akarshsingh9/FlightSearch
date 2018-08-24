@@ -19,8 +19,8 @@ import java.util.List;
 
 public class flightsSearched extends AppCompatActivity {
 
-    List<SearchedModelClass> list;
-    String passNo;
+    private List<SearchedModelClass> list;
+    private String passNo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,13 +45,13 @@ public class flightsSearched extends AppCompatActivity {
         adapter.openDB();
         Cursor c = adapter.retrieve(from,to,date);
          list = new ArrayList<>();
-        String flight ="";
-        String deptTime ="";
-        String arrTime ="";
-        String hrs ="";
-        String fromcode ="";
-        String tocode = "";
-        String price = "";
+        String flight;
+        String deptTime;
+        String arrTime;
+        String hrs;
+        String fromcode;
+        String tocode;
+        String price;
         int imageres = 0;
 
         while (c.moveToNext())

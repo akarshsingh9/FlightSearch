@@ -13,7 +13,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:id="@+id/dateText"
-        android:text="Date: "/>
+        android:text="@string/date"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -22,7 +22,7 @@
         android:layout_marginTop="8dp"
         android:layout_toEndOf="@id/dateText"
         android:id="@+id/datedept"
-        android:text="Date: "/>
+        android:text="@string/date"/>
 
 <android.support.v7.widget.CardView
     android:layout_width="match_parent"
@@ -46,12 +46,13 @@
             android:layout_marginStart="12dp"
             android:layout_marginTop="12dp"
             android:id="@+id/airlineImage"
-            android:src="@drawable/airindia"/>
+            android:src="@drawable/airindia"
+            android:contentDescription="@string/flightImage" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Airline "
+            android:text="@string/airline"
             android:layout_marginStart="12dp"
             android:layout_marginTop="12dp"
             android:textColor="#000000"
@@ -64,7 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginStart="40dp"
-            android:text="From: "
+            android:text="@string/from"
             android:textColor="#000000"
             android:id="@+id/fromheading"
             android:layout_toEndOf="@id/airlineImage"/>
@@ -74,7 +75,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginStart="12dp"
             android:layout_toEndOf="@id/fromheading"
-            android:text="MAA"
+            android:text="@string/maa"
             android:id="@+id/frominfo"/>
 
 
@@ -84,7 +85,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginStart="20dp"
             android:textColor="#000000"
-            android:text="To: "
+            android:text="@string/to"
             android:layout_toEndOf="@id/frominfo"
             android:id="@+id/toheading"/>
         <TextView
@@ -93,7 +94,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginStart="12dp"
             android:layout_toEndOf="@id/toheading"
-            android:text="BOM"
+            android:text="@string/bom"
             android:id="@+id/toinfo"/>
 
 
@@ -107,7 +108,7 @@
             android:textColor="#000000"
             android:layout_below="@id/fromheading"
             android:layout_toEndOf="@id/airlineImage"
-            android:text="Dept.: "
+            android:text="@string/dept"
             android:id="@+id/deptheading"/>
         <TextView
             android:layout_width="wrap_content"
@@ -116,7 +117,7 @@
             android:layout_marginStart="12dp"
             android:layout_below="@id/frominfo"
             android:layout_toEndOf="@id/fromheading"
-            android:text="21:00"
+            android:text="@string/_21_00"
             android:id="@+id/deptinfo"/>
 
 
@@ -125,7 +126,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:layout_marginStart="12dp"
-            android:text="Arr.: "
+            android:text="@string/arr"
             android:textColor="#000000"
             android:layout_toEndOf="@id/deptinfo"
             android:layout_below="@id/toheading"
@@ -137,7 +138,7 @@
             android:layout_marginStart="10dp"
             android:layout_toEndOf="@id/arrheading"
             android:layout_below="@id/toinfo"
-            android:text="22:00"
+            android:text="@string/_22_00"
             android:id="@+id/arrinfo"/>
 
 
@@ -148,7 +149,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:layout_marginStart="40dp"
-            android:text="Pass: "
+            android:text="@string/pass"
             android:textColor="#000000"
             android:layout_below="@id/deptheading"
             android:layout_toEndOf="@id/airlineImage"
@@ -160,7 +161,7 @@
             android:layout_marginTop="12dp"
             android:layout_marginStart="12dp"
             android:layout_toEndOf="@id/passheading"
-            android:text="10"
+            android:text="@string/_10"
             android:layout_below="@id/deptinfo"
             android:id="@+id/passinfo"/>
 
@@ -170,7 +171,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:layout_marginStart="36dp"
-            android:text="Fare: "
+            android:text="@string/fare"
             android:textColor="#000000"
             android:layout_toEndOf="@id/passinfo"
             android:layout_below="@id/arrheading"
@@ -182,7 +183,7 @@
             android:layout_marginStart="10dp"
             android:layout_toEndOf="@id/fareheading"
             android:layout_below="@id/arrinfo"
-            android:text="2200"
+            android:text="@string/_2200"
             android:id="@+id/fareinfo"/>
 
 
@@ -197,7 +198,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/priceperheadText"
-        android:text="Price per Head: "
+        android:text="@string/price_per_head"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="120dp"
         android:layout_below="@id/cardView"
@@ -208,7 +209,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/priceperhead"
-        android:text="2000"
+        android:text="@string/_2000"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="60dp"
         android:layout_below="@id/cardView"
@@ -218,7 +219,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/passNo"
-        android:text="Passengers: "
+        android:text="@string/passengers"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="120dp"
         android:layout_below="@id/priceperheadText"
@@ -228,7 +229,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/pass"
-        android:text="2"
+        android:text="@string/_2"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="60dp"
         android:layout_below="@id/priceperhead"
@@ -238,7 +239,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/totalText"
-        android:text="Total Fare: "
+        android:text="@string/total_fare"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="120dp"
         android:layout_below="@id/passNo"
@@ -249,7 +250,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/fare"
-        android:text="4000"
+        android:text="@string/_4000"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="60dp"
         android:layout_below="@id/pass"
@@ -260,7 +261,7 @@
         android:layout_width="match_parent"
         android:layout_marginEnd="30dp"
         android:layout_height="wrap_content"
-        android:text="Book Flight"
+        android:text="@string/book_flight"
         android:id="@+id/bookbtn"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
